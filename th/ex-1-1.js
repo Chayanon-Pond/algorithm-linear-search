@@ -9,10 +9,36 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+function findNumberIndex(numbers,targetNumber) {
+    // console.log(numbers)
+    for(let i = 0; i<numbers.length ; i++){
+        if(numbers[i] === targetNumber){
+            return i
+        }
+        
+        
+    }return -1
+    
+}
 
 const numbers1 = [10, 30, 5, 20, 55];
 console.log(findNumberIndex(numbers1, 55)); // 4
 
 const numbers2 = [300, -145, 200, 0, 100];
 console.log(findNumberIndex(numbers2, 2)); // -1
+
+
+
+
+
+
+
+// function findNumberIndex(numbers, targetNumber) {
+//     return numbers.indexOf(targetNumber)
+// }
+
+// const numbers1 = [10, 30, 5, 20, 55];
+// console.log(findNumberIndex(numbers1, 55)); // 4
+
+// const numbers2 = [300, -145, 200, 0, 100];
+// console.log(findNumberIndex(numbers2, 2)); // -1
